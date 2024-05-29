@@ -92,7 +92,7 @@ export default function RootLayout({
             <div className="md:hidden">
               <ul className="flex flex-col w-full px-10 py-2 absolute bg-gradient-to-tr from-black to-abu">
                 <li className="text-base font-bold w-50 underline underline-offset-4 hover:decoration-ungu hover:text-merah hover:ease-in-out hover:duration-500">
-                  <Link href="#">
+                  <Link href="/">
                     <span>Home</span>
                   </Link>
                 </li>
