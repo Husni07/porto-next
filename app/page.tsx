@@ -13,7 +13,7 @@ export default function Home() {
           draggable={false}
           alt=""
           className="h-60 w-60 lg:h-full lg:w-full p-4 object-cover rounded-full m-auto border-2 border-ungu hover:scale-105 duration-300 animasi"
-        /> */}
+        />
           <Image
             src="/Images/pantai.jpg"
             loading="lazy"
@@ -22,6 +22,15 @@ export default function Home() {
             width={500}
             height={500}
             className="h-60 w-60 lg:h-full lg:w-full p-4 object-cover m-auto rounded-full sepia hover:filter-none hover:scale-105 hover:-rotate-12 duration-700 cursor-pointer"
+          /> */}
+                    <Image
+            className="w-full rounded-full sepia blur hover:sepia-0 hover:blur-none duration-500 cursor-pointer"
+            src="/Images/doge.jpg"
+            loading="lazy"
+            alt=""
+            draggable={false}
+            width={500}
+            height={500}
           />
         </div>
         <div className="desc lg:w-2/3 mx-3 my-5 lg:m-0 lg:py-10">

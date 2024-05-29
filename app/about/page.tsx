@@ -15,10 +15,11 @@ const about = () => {
             draggable={false}
             width={500}
             height={500}
-            className="h-64 lg:h-full p-4 object-cover m-auto animasi"
+            data-aos="fade-up-left"
+            className="h-64 lg:h-full p-4 object-cover m-auto"
           />
         </div>
-        <div className="lg:w-2/3 mx-3 my-5 lg:m-0 lg:py-10">
+        <div className="lg:w-2/3 mx-3 my-5 lg:m-0 lg:py-10" data-aos="fade-up-right">
           <h1 className="text-5xl font-semibold text-center sm:text-left">
             Hallo
             <span className="bg-gradient-to-r from-merah to-ungu bg-clip-text text-transparent">
@@ -56,7 +57,7 @@ const about = () => {
             className="rounded-full sepia hover:filter-none hover:scale-110 hover:-rotate-12 duration-700 cursor-pointer"
           />
         </div>
-        <div className="col-start-3">
+        <div className="col-start-3" >
           <Image
             src="/Images/doge.jpg"
             loading="lazy"
@@ -91,7 +92,7 @@ const about = () => {
         </div>
         <div className="row-start-1 col-start-2 col-span-2">
           <Image
-            src="/Images/bome.jpg"
+            src="/Images/bnb.png"
             loading="lazy"
             alt=""
             draggable={false}

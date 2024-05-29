@@ -21,6 +21,7 @@ interface Coin {
 export default function GetCoin() {
   const [coins, setCoins] = useState<Coin[]>([]);
 
+
   const fetchData = () => {
     axios
       .get("https://crypto-api-gecko.vercel.app/api/coins")
@@ -61,7 +62,7 @@ export default function GetCoin() {
         coins.map((item) => (
           <div key={item.id} className="coin">
             {item.price_change_percentage_24h > 0 ? (
-              <div className="border-2 h-28 border-green-500 rounded-lg flex items-center p-4" data-aos>
+              <div className="border-2 h-28 border-green-500 rounded-lg flex items-center p-4" data-aos="fade-up">
                 <Image
                   className="w-8 h-8 rounded-full object-cover hover:scale-105 hover:rotate-6 hover:duration-300"
                   src={item.image}
@@ -99,7 +100,7 @@ export default function GetCoin() {
                 />
               </div>
             ) : (
-              <div className="border-2 h-28 border-red-500 rounded-lg flex items-center p-4">
+              <div className="border-2 h-28 border-red-500 rounded-lg flex items-center p-4" data-aos="fade-up">
                 <Image
                   className="w-8 h-8 rounded-full object-cover hover:scale-105 hover:rotate-6 hover:duration-300"
                   src={item.image}
